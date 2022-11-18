@@ -7,7 +7,7 @@ import { SubInfo, EthPrice, NFTTilte } from './SubInfo';
 import { RectButton, CircleButton } from './Button';
 
 const NFTCard = ({ data }) => {
-    const navigation = useNavigation()
+    const navigation = useNavigation();
 
     return(
         <View
@@ -36,7 +36,7 @@ const NFTCard = ({ data }) => {
                     }}
                 />
 
-                <CircleButton imgUrl={assest.heart} right={10} top={10} />
+                <CircleButton imgUrl={assets.heart} right={10} top={10} />
             </View>
 
             <SubInfo />

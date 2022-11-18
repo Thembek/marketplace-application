@@ -1,6 +1,6 @@
 import assets from './assets';
 
-const NFData = [
+const NFTData = [
     {
         id: "NFT-01",
         name: "Abstracto #312",

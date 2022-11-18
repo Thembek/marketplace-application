@@ -120,3 +120,5 @@ export const SubInfo = () => {
         </View>
     );
 };
+
+export default NFTTitle;

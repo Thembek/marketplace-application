@@ -1,20 +1,20 @@
-import React from 'recat';
-import { useFonts } from 'expo-font';
-import { createStackNavigation } from '@react-navigation/stack';
-import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
+import { useFonts } from "expo-font";
 
-import Home from './screens/Home';
-import Details from './screens/Details';
+import Home from "./screens/Home";
+import Details from "./screens/Details";
 
 const theme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    background: 'transparent',
+    background: "transparent",
   },
 };
 
-const Stack = createStackNavigation();
+const Stack = createStackNavigator();
 
 const App = () => {
   const [loaded] = useFonts({
@@ -25,9 +25,9 @@ const App = () => {
     InterLight: require("./assets/fonts/Inter-Light.ttf"),
   });
 
-  if(!loaded) return null;
+  if (!loaded) return null;
 
-  return(
+  return (
     <NavigationContainer theme={theme}>
       <Stack.Navigator
         screenOptions={{
